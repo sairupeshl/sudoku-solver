@@ -18,7 +18,7 @@ A simple and interactive Sudoku solver built with HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-Check out the live version [here](https://your-username.github.io/your-repo-name/).
+Check out the live version [here](https://sairupeshl.github.io/sudoku-solver/).
 
 ## Technologies Used
 
