@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Include CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Sudoku Solver | L. Sai Rupesh</title>
+        <link  rel="shortcut icon" type="image/x-icon" href="sudoku-logo.png">
+
+        <!-- Include Bootstrap's CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+        <!-- About Me button -->
+        <button class="floating-button"><a href="#about">About Me ↓</a></button>
+
+        <div id="top"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar sticky-top expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#top" style="margin: auto;">
+                    <img src="SR logo-circle.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+                    <span id="title">
+                        Sudoku Solver | L. Sai Rupesh
+                    </span>
+                </a>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <!-- TODO: Change to portfolio link -->
+                        <a id="portfolio-link" class="nav-link" href="https://www.linkedin.com/in/sai-rupesh--/">My Linkedin</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="sudoku-container">
+            <div id="sudoku-grid"></div>
+            <div class="button-container">
+                <button id="solve-btn">Solve Sudoku</button>
+                <button id="reset-btn">Reset All</button>
+                <button id="del_ans-btn">Remove Answers</button>
+            </div>
+        </div>
+
+        <hr>
+        <div id="about">
+            <h2 style="margin-bottom: 1.2rem;">ABOUT ME</h2>
+            <p>
+                I'm Sai Rupesh, a sophomore at IIT-M with a passion for building projects, learning new tech, and having fun with code.
+                I love solving problems, trying out new things, and pushing myself to get better every day.
+                When I'm not watching Shinchan, I'm usually coding 😊 <br>
+                Feel free to check out my Linkedin profile : <a href="https://www.linkedin.com/in/sai-rupesh--/" target="blank">Sai Rupesh L</a> <br>
+                <!-- TODO: Insert Portfolio and Resume links -->
+                <!-- Portfolio Website: <a href="" target="blank">Portfolio | L. Sai Rupesh</a> <br> -->
+                <!-- Resume: <a href="" target="blank">L. Sai Rupesh</a> <br> -->
+                GitHub : <a href="https://github.com/sairupeshl" target="blank">Sai Rupesh L</a> <br>
+            </p>
+        </div>
+
+        <footer class="footer-container">
+            <img src="footer-bg.jpg" alt="Snow" style="width:100%;">
+            <div class="footer-text">©2025 L. Sai Rupesh</div>
+        </footer>
+
+        <!-- Include Bootstrap's JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+        <!-- Include JS -->
+         <script src="main.js"></script>
+
+    </body>
+</html>
