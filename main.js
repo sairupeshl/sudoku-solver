@@ -38,6 +38,11 @@ solveBtn.addEventListener('click', () => {
         }
     }
 
+    if (!isInitialBoardValid(sudoku)) {
+        alert("The board contains conflicting numbers.");
+        return; // Stops the solver from running
+    }
+
     if (solveSudoku(sudoku)) {
         // Update UI with the solution
         for (let i = 0; i < 9; i++) {
@@ -116,3 +121,19 @@ delansBtn.addEventListener('click', () => {
         }
     }
 })
+
+function isInitialBoardValid(sudoku) {
+    for (let row = 0; row < 9; row++) {
+        for (let col = 0; col < 9; col++) {
+            const num = sudoku[row][col];
+            if (num !== 0) {
+                sudoku[row][col] = 0; // Temporarily lift the number
+                if (!isValid(sudoku, row, col, num)) {
+                    return false; // If a duplicate conflict is found
+                }
+                sudoku[row][col] = num; // Put it back
+            }
+        }
+    }
+    return true;
+}
